@@ -4,15 +4,14 @@
 In his instance he used WiFi microchip ESP8266 with Arduino code, but I didn't have such a chip, so I got an idea to use relay and connect it's coil to my bell which is powered by 12 volts from transformer and it's normally open leg to Raspberry Pi.
 
 **Table of contents:**
-- [Telegram doorbell notification running on Raspberry Pi](#telegram-doorbell-notification-running-on-raspberry-pi)
-  * [How to connect relay to your existing doorbell and Raspberry Pi GPIO header scheme](#how-to-connect-relay-to-your-existing-doorbell-and-raspberry-pi-gpio-header-scheme)
-  * [How to create Telegram bot](#how-to-create-telegram-bot)
-  * [Simple python code that will send message](#simple-python-code-that-will-send-message)
-    + [Run python in the background](#run-python-in-the-background)
-  * [Troubleshooting](#troubleshooting)
-    + [High CPU uasge](#high-cpu-uasge)
-    + [I don't have a CHAT ID](#i-dont-have-a-chat-id)
-  * [Note](#note)
+* [How to connect relay to your existing doorbell and Raspberry Pi GPIO header scheme](#how-to-connect-relay-to-your-existing-doorbell-and-raspberry-pi-gpio-header-scheme)
+* [How to create Telegram bot](#how-to-create-telegram-bot)
+* [Simple python code that will send message](#simple-python-code-that-will-send-message)
+  + [Run python in the background](#run-python-in-the-background)
+* [Troubleshooting](#troubleshooting)
+  + [High CPU uasge](#high-cpu-uasge)
+  + [I don't have a CHAT ID](#i-dont-have-a-chat-id)
+* [Note](#note)
 
 ## How to connect relay to your existing doorbell and Raspberry Pi GPIO header scheme
 ![ring-relay-GPIO](img/scheme.png)
