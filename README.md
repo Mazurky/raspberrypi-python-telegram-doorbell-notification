@@ -40,7 +40,7 @@ In code below you have to change your **token** and **chat id** and based on you
 ### Run python in the background
 To let code running in the background, I'm using nohup and output will append to bell.log file.
 ```shell
-nohup python3 -u ./bellNotifier.py >> bell.log &
+nohup python3 -u ./bellNotifier.py > bell.log &
 ```
 ## Troubleshooting
 ### High CPU uasge
