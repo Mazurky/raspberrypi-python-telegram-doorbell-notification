@@ -14,7 +14,6 @@ GPIO.setmode(GPIO.BOARD)
 GPIO.setup(PIN, GPIO.IN)
 GPIO.setup(PIN, GPIO.LOW)
 
-f = open("belllog.txt", "a")
 count = 1
 
 print("Running....")
@@ -28,7 +27,9 @@ while True:
             now = datetime.now()
             date_time = now.strftime("%d/%m/%Y-%H:%M:%S")
             text = str(count) + ": " + str(date_time) + "\n"
+            f = open("belllog.txt", "a")
             f.write(text)
+            f.close()
             count += 1
             # "ringing time" (so that the message comes only once)
             time.sleep(2)
